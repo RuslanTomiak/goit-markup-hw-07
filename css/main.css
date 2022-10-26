@@ -4,16 +4,19 @@
   border-left: none;
   border-right: none;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -46,6 +49,7 @@
   margin-left: 90px;
   gap: 50px;
 }
+
 .site-nav a {
   display: block;
   font-weight: 500;
@@ -61,9 +65,11 @@
 .site-nav a:focus {
   color: var(--hover-color);
 }
+
 .current {
   position: relative;
 }
+
 .current::after {
   content: "";
   position: absolute;
@@ -74,10 +80,12 @@
   border-radius: 2px;
   background-color: var(--hover-color);
 }
+
 .contacts {
   margin-left: auto;
   gap: 50px;
 }
+
 .contacts a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -90,6 +98,7 @@
   gap: 10px;
   transition: color 250ms var(--timing-function);
 }
+
 .contact-logo {
   fill: currentColor;
   align-self: center;
@@ -98,4 +107,4 @@
 .contacts a:hover,
 .contacts a:focus {
   color: var(--hover-color);
-}
+}/*# sourceMappingURL=main.css.map */
