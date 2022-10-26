@@ -793,8 +793,7 @@ img {
   gap: 8px;
   margin-bottom: 50px;
 }
-.portfolio-top-list {
-}
+
 .products-top-text {
   position: absolute;
   top: 0;
@@ -815,8 +814,6 @@ img {
   transform: translateY(0);
 }
 
-.portfolio-img {
-}
 .portfolio-list {
   border: 1px solid #eeeeee;
   border-top: none;
