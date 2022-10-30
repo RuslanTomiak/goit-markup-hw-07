@@ -602,6 +602,9 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts:hover, .footer-contacts:focus {
+  color: var(--hover-color);
+}
 
 .list-link li:not(:last-child) {
   margin-bottom: 9px;
