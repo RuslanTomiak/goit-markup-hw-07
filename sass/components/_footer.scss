@@ -67,10 +67,18 @@
   gap: 10px;
 }
 
-.footer-contacts {
+.footer-svg {
   fill: var(--white-text);
 }
-
+.footer-contacts {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .list-link li:not(:last-child) {
   margin-bottom: 9px;
@@ -124,11 +132,11 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-   cursor: pointer;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   &:hover,
-   &:focus {
-  background-color: var(--special-btn-color);
+  &:hover,
+  &:focus {
+    background-color: var(--special-btn-color);
   }
 }
 .icon-form-footer {
