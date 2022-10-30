@@ -220,20 +220,17 @@ img {
   background-color: var(--special-btn-color);
 }
 
-.feature-section {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.category {
+.feature__list {
   display: flex;
-  flex-wrap: nowrap;
-  flex-basis: calc(25% - 30px);
-  justify-content: center;
   gap: 30px;
 }
 
-.icon {
+.feature__icon {
   display: flex;
   height: 120px;
   border-radius: 4px;
@@ -242,7 +239,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.feature {
+.feature__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -253,12 +250,16 @@ img {
   margin-bottom: 10px;
 }
 
-.feature-list {
+.feature__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--team-color);
+}
+
+.feature__item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .skills {
@@ -601,6 +602,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
 }
 .footer-contacts:hover, .footer-contacts:focus {
   color: var(--hover-color);
@@ -800,6 +802,10 @@ img {
   padding: 0;
   min-height: 50px;
   min-width: 200px;
+  transition: background-color 250ms var(--timing-function);
+}
+.form-btn:focus, .form-btn:hover {
+  background-color: var(--special-btn-color);
 }
 
 .form-comment {
@@ -828,6 +834,7 @@ img {
 }
 .modal-comment:focus, .modal-comment:hover {
   outline: 1px solid var(--hover-color);
+  border-color: transparent;
 }
 .modal-comment::-moz-placeholder {
   font-size: 12px;
