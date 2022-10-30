@@ -1,7 +1,7 @@
-.credo-section {
+.skills {
     padding-bottom: 94px;
   }
-  .credo {
+  .skills__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -10,10 +10,10 @@
     color: var(--site-nav-text);
     margin-bottom: 50px;
   }
-  .skills-link {
+  .skills__images {
     position: relative;
   }
-  .skills-text {
+  .skills__text {
     position: absolute;
     bottom: 0;
     right: 0;

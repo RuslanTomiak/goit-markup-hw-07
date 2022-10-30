@@ -1,9 +1,9 @@
-.teamwork-section {
+.team {
   background-color: var(--back-list-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.teamwork {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -12,7 +12,7 @@
   color: var(--site-nav-text);
   margin-bottom: 50px;
 }
-.team {
+.team__peple {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -21,7 +21,7 @@
   color: var(--site-nav-text);
   margin-top: 30px;
 }
-.team-list {
+.team__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -31,13 +31,13 @@
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.team-social-list {
+.team__social-list {
   justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
 }
 
-.team-link {
+.team__link {
   display: flex;
   border-radius: 50%;
   width: 44px;
@@ -53,17 +53,17 @@
   }
 }
 
-.contact-logo-team {
+.team__contact-logo {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 
-  .team-link:hover &,
-  .team-link:focus & {
+  .team__link:hover &,
+  .team__link:focus & {
     fill: #ffffff;
   }
 }
 
-.teamwork-list {
+.team__list {
   background-color: var(--white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

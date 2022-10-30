@@ -1,6 +1,6 @@
-@import "./base/vars";
+@import "./base/variables";
 @import "./base/reset";
-@import "./base/body";
+@import "./base/list.scss";
 @import "./base/hidden";
 @import "./base/container";
 @import "./base/logo";
@@ -8,7 +8,7 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/feature";
-@import "./components/credo";
+@import "./components/skills";
 @import "./components/teamwork";
 @import "./components/clients";
 @import "./components/portfolio";

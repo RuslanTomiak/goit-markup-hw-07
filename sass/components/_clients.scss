@@ -1,8 +1,8 @@
-.clients-section {
+.clients {
   padding-top: 92px;
   padding-bottom: 92px;
 }
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -10,7 +10,7 @@
   color: var(--site-nav-text);
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   border-radius: 4px;
@@ -19,7 +19,7 @@
   flex-basis: calc(100% / 6 - 30px);
   flex-grow: 1;
 }
-.clients-icon {
+.clients__icon {
   display: flex;
   width: 170px;
   height: 92px;
@@ -34,13 +34,12 @@
   }
 }
 
-.button-icon {
+.clients__button {
   background-size: cover;
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
-   .clients-icon:hover &,
-   .clients-icon:focus & {
+   .clients__icon:hover &,
+   .clients__icon:focus & {
   fill: var(--hover-color);
   }
-
 }

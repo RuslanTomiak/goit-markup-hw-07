@@ -10,6 +10,12 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  background: var(--white-text);
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+}
+
 p,
 h1,
 h2,
@@ -44,10 +50,10 @@ img {
   height: auto;
 }
 
-body {
-  background: var(--white-text);
-  color: var(--color-black);
-  font-family: "Roboto", sans-serif;
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
 }
 
 .visually-hidden {
@@ -214,12 +220,6 @@ body {
   background-color: var(--special-btn-color);
 }
 
-.list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 30px;
-}
-
 .feature-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -261,11 +261,11 @@ body {
   color: var(--team-color);
 }
 
-.credo-section {
+.skills {
   padding-bottom: 94px;
 }
 
-.credo {
+.skills__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -275,11 +275,11 @@ body {
   margin-bottom: 50px;
 }
 
-.skills-link {
+.skills__images {
   position: relative;
 }
 
-.skills-text {
+.skills__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -298,13 +298,13 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.teamwork-section {
+.team {
   background-color: var(--back-list-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.teamwork {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -314,7 +314,7 @@ body {
   margin-bottom: 50px;
 }
 
-.team {
+.team__peple {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -324,7 +324,7 @@ body {
   margin-top: 30px;
 }
 
-.team-list {
+.team__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -335,13 +335,13 @@ body {
   margin-bottom: 16px;
 }
 
-.team-social-list {
+.team__social-list {
   justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
 }
 
-.team-link {
+.team__link {
   display: flex;
   border-radius: 50%;
   width: 44px;
@@ -350,32 +350,32 @@ body {
   justify-content: center;
   transition: background-color 250ms var(--timing-function);
 }
-.team-link:hover, .team-link:focus {
+.team__link:hover, .team__link:focus {
   fill: #ffffff;
   background-color: var(--hover-color);
   transition: fill 250ms linear, background-color 250ms var(--timing-function);
 }
 
-.contact-logo-team {
+.team__contact-logo {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
-.team-link:hover .contact-logo-team, .team-link:focus .contact-logo-team {
+.team__link:hover .team__contact-logo, .team__link:focus .team__contact-logo {
   fill: #ffffff;
 }
 
-.teamwork-list {
+.team__list {
   background-color: var(--white-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.clients-section {
+.clients {
   padding-top: 92px;
   padding-bottom: 92px;
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -384,7 +384,7 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   border-radius: 4px;
@@ -394,7 +394,7 @@ body {
   flex-grow: 1;
 }
 
-.clients-icon {
+.clients__icon {
   display: flex;
   width: 170px;
   height: 92px;
@@ -404,27 +404,26 @@ body {
   border-radius: 4px;
   transition: fill 250ms var(--timing-function);
 }
-.clients-icon:hover, .clients-icon:focus {
+.clients__icon:hover, .clients__icon:focus {
   border: 1px solid var(--hover-color);
 }
 
-.button-icon {
+.clients__button {
   background-size: cover;
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
-.clients-icon:hover .button-icon, .clients-icon:focus .button-icon {
+.clients__icon:hover .clients__button, .clients__icon:focus .clients__button {
   fill: var(--hover-color);
 }
 
-.portfolio-section {
+.portfolio {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.btn {
+.portfolio__btn {
   font-family: "Roboto", sans-serif;
-  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -434,32 +433,48 @@ body {
   color: var(--site-nav-text);
   background: var(--back-list-color);
   border-radius: 4px;
-  border: 0;
   padding: 5px 22px;
   min-height: 38px;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-.btn:hover, .btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--white-text);
   background-color: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.list-button {
+.portfolio__progect-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--site-nav-text);
+  margin-bottom: 4px;
+}
+
+.portfolio__progect-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--team-color);
+}
+
+.portfolio__list-button {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.portfolio-top-list {
+.portfolio__top-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.products-top-text {
+.portfolio__overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -474,11 +489,11 @@ body {
   transition: transform 250ms var(--timing-function);
   overflow: auto;
 }
-.all-items-link:hover .products-top-text, .all-items-link:focus .products-top-text {
+.portfolio__all-items-link:hover .portfolio__overlay-text, .portfolio__all-items-link:focus .portfolio__overlay-text {
   transform: translateY(0);
 }
 
-.portfolio-list {
+.portfolio__progect-list {
   border: 1px solid #eeeeee;
   border-top: none;
   padding-top: 20px;
@@ -487,18 +502,18 @@ body {
   padding-right: 24px;
 }
 
-.all-items {
+.portfolio__all-items {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.all-items-link {
+.portfolio__all-items-link {
   display: block;
 }
-.all-items-link:hover, .all-items-link:focus {
+.portfolio__all-items-link:hover, .portfolio__all-items-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfilio-ghost {
+.portfolio__overlay {
   position: relative;
   overflow: hidden;
 }
@@ -576,23 +591,6 @@ body {
 
 .footer-contacts {
   fill: var(--white-text);
-}
-
-.work-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--site-nav-text);
-  margin-bottom: 4px;
-}
-
-.work-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--team-color);
 }
 
 .list-link li:not(:last-child) {

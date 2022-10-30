@@ -9,3 +9,8 @@
     --footer-bgc: #2f303a;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  body {
+    background: var(--white-text);
+    color: var(--color-black);
+    font-family: "Roboto", sans-serif;
+  }
