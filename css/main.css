@@ -589,8 +589,18 @@ img {
   gap: 10px;
 }
 
-.footer-contacts {
+.footer-svg {
   fill: var(--white-text);
+}
+
+.footer-contacts {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .list-link li:not(:last-child) {
